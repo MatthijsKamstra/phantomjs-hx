@@ -132,3 +132,31 @@ The require("webpage").create() syntax is not used to create phantomjs objects
 (e.g. WebPages).  Instead, you can simply use  the "create" method for the
 class. (e.g. WebPage.create()), which conforms to Haxe syntax, and aliases the
 correct js code.
+
+
+### Haxelib
+
+Install phantomjs via Haxelib
+
+```bash
+haxelib install phantomjs
+```
+
+And don't forget to add it to your build file
+
+```bash
+-lib phantomjs
+```
+
+But you might want to update and/or correct the externs: install this repo locally
+
+```bash
+haxelib dev phantomjs path/to/folder/src
+```
+
+Or use the developers version / cutting edge: this git repo
+
+```bash
+haxelib git phantomjs https://github.com/MatthijsKamstra/phantomjs-hx
+```
+
