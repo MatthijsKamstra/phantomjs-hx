@@ -1,0 +1,8 @@
+-lib phantomjs
+-cp src
+-main Main
+-js bin/hello.js
+-D source-map-content
+-dce full
+-debug
+-cmd phantomjs bin/hello.js

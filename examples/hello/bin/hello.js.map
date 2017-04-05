@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"hello.js",
+"sourceRoot":"file:///",
+"sources":["/Users/matthijs/Documents/GIT/phantomjs-hx/examples/hello/src/Main.hx"],
+"sourcesContent":["package;\n\nimport js.Browser.console;\nimport js.phantomjs.Phantom;\nimport js.phantomjs.PhantomTools;\n\nclass Main {\n\n\tpublic function new() {\n        console.log('hello world');\n        Phantom.exit(); // exit phantomjs\n    }\n\n    static public function main() {\n\t\tif (PhantomTools.noPhantom()) return; // exit if not in phantom scope\n\t\tvar app = new Main();\n\t}\n}\n"],
+"names":[],
+"mappings":";;WAQQ,WAAe;AAAA,CACf,mBAAa;CACb;;YAGU,WAAgB;AAAA,CAChC,EAAI,0EAA0B;AAAA;;CAC9B,UAAU;;;;;"
+}
